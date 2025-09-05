@@ -1,5 +1,4 @@
 # Copyright (c) 2025, Shubham Mishra and contributors
-# For license information, please see license.txt
 
 import frappe
 # from __future__ import unicode_literals
@@ -57,10 +56,10 @@ class PasswordManager(Document):
 
 	@frappe.whitelist()
 	def get_my_password(self):
-		if check_user_exist_in_list(self):
-			return get_decrypted_password(self.doctype, self.name, 'password', raise_exception=True)
-		else:
-			frappe.throw(_("You have no permission to view the password."))
+		# if check_user_exist_in_list(self):
+		return get_decrypted_password(self.doctype, self.name, 'password', raise_exception=True)
+		# else:
+		# 	frappe.throw(_("You have no permission to view the password."))
 
 @frappe.whitelist()
 def get_password_strength(pwd):
@@ -95,11 +94,15 @@ def create_new_password():
 	pwd = "".join(random.sample(str, 8))
 	while get_password_strength(pwd) != "Strong":
 		pwd = "".join(random.sample(str, 8))
-	return pwd
+	return pwd 
 
-def check_user_exist_in_list(doc):
-	if doc.user_list:
-		for user in doc.user_list:
-			if user.user == frappe.session.user:
-				return True
-	return True if (frappe.session.user in ['Administrator', doc.credentials_owner]) else False
+# def check_user_exist_in_list(doc):
+# 	if doc.user_list:
+# 		for user in doc.user_list:
+# 			if user.user == frappe.session.user:
+# 				return True
+# 	return True if (frappe.session.user in ['Administrator', doc.credentials_owner]) else False
+
+
+
+

@@ -18,7 +18,7 @@ frappe.ui.form.on('Password Manager', {
 			else{
 				set_fields_read_only(frm);
 			}
-			if(check_user_exist_in_list(frm) && frm.doc.docstatus < 2){
+			if(frm.doc.docstatus < 2){
 				frm.add_custom_button(__('Get My Password'), function() {
 					get_my_password(frm);
 				});
@@ -294,3 +294,4 @@ var check_user_exist_in_list = function(frm) {
 	}
 	return user_exist;
 };
+

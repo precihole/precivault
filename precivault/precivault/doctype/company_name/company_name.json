@@ -1,36 +1,35 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:company_name",
- "creation": "2025-08-08 11:22:18.882795",
+ "autoname": "hash",
+ "creation": "2025-09-05 13:13:22.250772",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "company_name"
+  "company"
  ],
  "fields": [
   {
-   "fieldname": "company_name",
+   "fieldname": "company",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Company Name",
-   "options": "Company",
-   "reqd": 1,
-   "unique": 1
+   "label": "Company",
+   "options": "Company"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-08-08 11:23:34.155178",
+ "modified": "2025-09-05 14:02:26.273748",
  "modified_by": "Administrator",
  "module": "PreciVault",
  "name": "Company Name",
- "naming_rule": "By fieldname",
+ "naming_rule": "Random",
  "owner": "Administrator",
  "permissions": [],
  "quick_entry": 1,
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
