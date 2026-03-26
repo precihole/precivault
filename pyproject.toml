@@ -1,12 +1,13 @@
 [project]
 name = "precivault"
+version = "0.0.1"
 authors = [
     { name = "Shubham Mishra", email = "shubham@preciholesports.com"}
 ]
 description = "PreciVault is a top-tier password manager that securely store your password with advance encryption. It enhances your security with TOTP authentication. PrecValult Keeps your digital life safe, organized."
 requires-python = ">=3.10"
 readme = "README.md"
-dynamic = ["version"]
+#dynamic = ["version"]
 dependencies = [
     #"frappe~=15.0.0" # Installed and managed by bench.
     "frappe>=15.0.0,<16.0.0"
