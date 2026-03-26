@@ -31,6 +31,79 @@ bench get-app --branch [branch name] https://github.com/precihole/precivault.git
 bench --site [site name] install-app precivault
 
 ```
-### License
+## 📸 How to Use
 
-mit
+### Step 1: Search for Password Manager
+Go to the search bar and open the **Password Manager** DocType.
+
+![Step 1](https://github.com/precihole/precivault/blob/precivault-v2.0.0/screenshorts/1.png)
+
+---
+
+### Step 2: Add Your Credentials
+Enter your password-related details such as:
+- Website / Application name  
+- Username  
+- Password  
+
+Then click **Save**.
+
+![Step 2](https://github.com/precihole/precivault/blob/precivault-v2.0.0/screenshorts/2.png)
+
+---
+
+### Step 3: Saved Document View
+After saving, your document will look like this.
+
+![Step 3](https://github.com/precihole/precivault/blob/precivault-v2.0.0/screenshorts/3.png)
+
+---
+
+### Step 4: View Your Password
+Click on the **"Get My Password"** button.  
+Enter your TOTP code to securely retrieve your password. you will get your totp in "Google authenticator" app see in Step 6.1 .
+
+![Step 4](https://github.com/precihole/precivault/blob/precivault-v2.0.0/screenshorts/4.png)
+
+---
+
+### Step 5: Open Password Settings (Admin Only)
+Log in with the **Administrator account** and open the **Password Settings** DocType.  
+
+Click on **"Generate New TOTP Secret"**.  
+⚠️ Only the Administrator can perform this action.
+
+![Step 5](https://github.com/precihole/precivault/blob/precivault-v2.0.0/screenshorts/5.png)
+
+---
+
+### Step 6: Setup TOTP (Google Authenticator)
+After generating the TOTP secret:
+- A QR code will appear  
+- Scan it using the Google Authenticator app or any TOTP app  
+
+📱 Download Google Authenticator:  
+- Android: https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2  
+- iOS: https://apps.apple.com/app/google-authenticator/id388497605  
+
+![Step 6](https://github.com/precihole/precivault/blob/precivault-v2.0.0/screenshorts/6.png)
+
+---
+### Step 6.1: View 6 Digit TOTP from google authenicator app. 
+497605  
+
+![Step 6.1](https://github.com/precihole/precivault/blob/precivault-v2.0.0/screenshorts/6.png)
+
+---
+### Step 7: Allow TOTP Access to Users
+In the **Allowed TOTP** field:
+- Add user email IDs  
+- Only those users can view the QR code  
+
+By default:
+- Only **Administrator** has access  
+- Only Administrator can add/remove users  
+
+![Step 7](https://github.com/precihole/precivault/blob/precivault-v2.0.0/screenshorts/7.png)
+
+---
