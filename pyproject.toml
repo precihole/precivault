@@ -1,20 +1,27 @@
 [project]
 name = "precivault"
 authors = [
-    { name = "Shubham Mishra", email = "shubham@preciholesports.com"}
+    { name = "Shubham Mishra", email = "shubham@preciholesports.com" }
 ]
-description = "PreciVault is a top-tier password manager that securely store your password with advance encryption. It enhances your security with TOTP authentication. PrecValult Keeps your digital life safe, organized."
+description = "PreciVault is a top-tier password manager that securely stores your passwords with advanced encryption. It enhances your security with TOTP authentication and keeps your digital life safe and organized."
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
+
+# Add your runtime dependencies here
 dependencies = [
-    #"frappe~=15.0.0" # Installed and managed by bench.
+    "pyotp>=2.9.0",
+    "cryptography>=42.0.0"
 ]
 
 [build-system]
 requires = ["flit_core >=3.4,<4"]
 build-backend = "flit_core.buildapi"
 
-# These dependencies are only installed when developer mode is enabled
+# Required for Frappe compatibility
+[tool.bench.frappe-dependencies]
+frappe = ">=15.0.0,<16.0.0"
+
+# Optional: only installed in developer mode
 [tool.bench.dev-dependencies]
-# package_name = "~=1.1.0"
+pytest = "~=7.4.0"
