@@ -25,3 +25,4 @@ frappe = ">=15.0.0,<16.0.0"
 # Optional: only installed in developer mode
 [tool.bench.dev-dependencies]
 pytest = "~=7.4.0"
+semgrep = "==1.162.0"
