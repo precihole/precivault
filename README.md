@@ -110,4 +110,7 @@ By default:
 
 Proprietary License See [license.txt](license.txt).
 
+## Developed By
+Shubham mishra
+
 
