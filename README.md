@@ -106,3 +106,8 @@ By default:
 ![Step 7](https://github.com/precihole/precivault/blob/master/screenshorts/7.png)
 
 ---
+## License
+
+Proprietary License See [license.txt](license.txt).
+
+
